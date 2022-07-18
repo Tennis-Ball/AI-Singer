@@ -1,5 +1,5 @@
-from lyrics import make_lyrics
-from song import make_song
+from lyrics_modules.lyrics import make_lyrics  # < main code for generating lyrics
+from song_modules.song import make_song  # < main code for generating song
 from profanityfilter import ProfanityFilter
 import syllables as sl
 import time
@@ -8,7 +8,9 @@ import time
 pf = ProfanityFilter()
 
 lyrics_length = 75
-lyrics_epochs = 50000
+# lyrics_epochs = 50000
+lyrics_epochs = 1
+
 lyrics_neuron_size = 128
 
 lyrics = make_lyrics(lyrics_length, lyrics_epochs, lyrics_neuron_size)

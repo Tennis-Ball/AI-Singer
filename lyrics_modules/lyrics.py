@@ -1,6 +1,6 @@
 import numpy as np
 import time
-from get_lyric_data import get_lyric_data
+from lyrics_modules.get_lyric_data import get_lyric_data
 
 
 def make_lyrics(seq_length, iterations, hidden_size):
